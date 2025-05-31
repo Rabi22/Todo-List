@@ -313,14 +313,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ⚡ Performance Score: 95/100
 ```
 
-## 🔗 Related Projects
-
-- [React Todo App](https://github.com/yourusername/react-todo)
-- [Vue.js Task Manager](https://github.com/yourusername/vue-tasks)
-- [Angular Project Tracker](https://github.com/yourusername/angular-tracker)
-
----
-
 <div align="center">
 
 **Made with ❤️ for learning and showcase purposes**
