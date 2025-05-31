@@ -9,7 +9,7 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![EJS](https://img.shields.io/badge/EJS-B4CA65?style=for-the-badge&logo=ejs&logoColor=black)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-brightgreen?style=for-the-badge&logo=render)](https://todo-list-q9k5.onrender.com)
 
@@ -248,25 +248,6 @@ Neutral Gray: #95a5a6
 
 *Note: Free tier may experience cold starts (30-60 second initial load)*
 
-## 🔮 Future Enhancements
-
-### **Planned Features**
-- [ ] 💾 **Local Storage**: Persist tasks between sessions
-- [ ] 🏷️ **Categories**: Organize tasks by category
-- [ ] 📅 **Due Dates**: Add deadline functionality
-- [ ] 🔔 **Notifications**: Browser notifications for tasks
-- [ ] 👥 **Multi-user**: User authentication and profiles
-- [ ] 📊 **Analytics**: Task completion statistics
-- [ ] 🌙 **Dark Mode**: Alternative theme option
-- [ ] 📱 **PWA**: Progressive Web App capabilities
-
-### **Technical Improvements**
-- [ ] Database integration (MongoDB/PostgreSQL)
-- [ ] RESTful API expansion
-- [ ] Unit and integration testing
-- [ ] CI/CD pipeline setup
-- [ ] Docker containerization
-
 ## 🤝 Contributing
 
 Contributions are welcome! Here's how you can help:
@@ -283,17 +264,10 @@ Contributions are welcome! Here's how you can help:
 - Test on multiple browsers
 - Ensure responsive compatibility
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👨‍💻 Author
 
-**[Your Name]**
-- 🌐 Portfolio: [your-portfolio.com](https://your-portfolio.com)
-- 💼 LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- 🐙 GitHub: [github.com/yourusername](https://github.com/yourusername)
-- 📧 Email: your.email@example.com
+**Biswasmruti Pradhan**
+- 📧 Email: rabipradhan320@gmail.com
 
 ## 🙏 Acknowledgments
 
