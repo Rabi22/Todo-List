@@ -99,7 +99,7 @@
             });
         }
 
-        // Save edited task
+        // Save edited task using PUT method
         function saveTask(index) {
             const taskElement = document.querySelector(`[data-task-index="${index}"]`);
             const editForm = taskElement.querySelector('.edit-form');
@@ -112,23 +112,17 @@
                 return;
             }
             
-            // Create and submit form
+            // Create and submit form with PUT method
             const form = document.createElement('form');
             form.method = 'POST';
-            form.action = '/edit';
+            form.action = `/task/${index}?_method=PUT`;
             form.style.display = 'none';
-            
-            const indexInput = document.createElement('input');
-            indexInput.type = 'hidden';
-            indexInput.name = 'taskIndex';
-            indexInput.value = index;
             
             const textInput = document.createElement('input');
             textInput.type = 'hidden';
             textInput.name = 'newText';
             textInput.value = newText;
             
-            form.appendChild(indexInput);
             form.appendChild(textInput);
             document.body.appendChild(form);
             form.submit();
@@ -151,20 +145,14 @@
             actionsDiv.style.display = 'flex';
         }
 
-        // Delete task with confirmation
+        // Delete task with confirmation using DELETE method
         function deleteTask(index, taskText) {
             if (confirm(`Are you sure you want to delete "${taskText.trim()}"?`)) {
                 const form = document.createElement('form');
                 form.method = 'POST';
-                form.action = '/delete';
+                form.action = `/task/${index}?_method=DELETE`;
                 form.style.display = 'none';
                 
-                const input = document.createElement('input');
-                input.type = 'hidden';
-                input.name = 'taskIndex';
-                input.value = index;
-                
-                form.appendChild(input);
                 document.body.appendChild(form);
                 form.submit();
             }
@@ -206,6 +194,6 @@
                 });
             }
         });
-    </script></script>
+    </script>
 </body>
 </html>
