@@ -1,12 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const methodOverride = require('method-override');
 var app = express();
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json()); // Added for JSON parsing
-app.set('view engine', 'ejs');
 
-const path = require('path');
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json()); 
+app.use(methodOverride('_method'));
+app.set('view engine', 'ejs');
 
 var items = [];
 
@@ -24,8 +25,9 @@ app.post('/', (req, res) => {
     res.redirect('/');
 });
 
-app.post('/delete', (req, res) => {
-    const taskIndex = parseInt(req.body.taskIndex);
+// Use DELETE method for delete operation
+app.delete('/task/:index', (req, res) => {
+    const taskIndex = parseInt(req.params.index);
     if (taskIndex >= 0 && taskIndex < items.length) {
         const deletedItem = items.splice(taskIndex, 1)[0];
         console.log('Deleted item:', deletedItem);
@@ -34,9 +36,9 @@ app.post('/delete', (req, res) => {
     res.redirect('/');
 });
 
-// New edit route
-app.post('/edit', (req, res) => {
-    const taskIndex = parseInt(req.body.taskIndex);
+// Use PUT method for edit/update operation
+app.put('/task/:index', (req, res) => {
+    const taskIndex = parseInt(req.params.index);
     const newText = req.body.newText;
     
     if (taskIndex >= 0 && taskIndex < items.length && newText && newText.trim() !== '') {
@@ -50,4 +52,5 @@ app.post('/edit', (req, res) => {
 
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
+    console.log('Make sure to install method-override: npm install method-override');
 });
