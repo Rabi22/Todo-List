@@ -10,7 +10,7 @@
 ![EJS](https://img.shields.io/badge/EJS-B4CA65?style=for-the-badge&logo=ejs&logoColor=black)
 
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-brightgreen?style=for-the-badge&logo=render)](https://todo-list-q9k5.onrender.com)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-brightgreen?style=for-the-badge&logo=render)](https://todo-list-j9og.onrender.com)
 
 </div>
 
@@ -43,7 +43,7 @@ A modern, interactive Todo List application featuring stunning 3D glassmorphism 
 ## 🚀 Live Demo
 
 ### 🌐 **Deployed Application**
-**Experience the app live**: [https://todo-list-q9k5.onrender.com](https://todo-list-q9k5.onrender.com)
+**Experience the app live**: [https://todo-list-j9og.onrender.com](https://todo-list-j9og.onrender.com)
 
 *Hosted on Render - Free tier (may take 30-60 seconds for initial load)*
 
